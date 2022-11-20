@@ -86,8 +86,10 @@ const reviews = [
 const img = document.getElementById("person-img");
 const author = document.getElementById("author");
 const info = document.getElementById("info");
-const prevBtn = document.querySelector('.prev-btn');
-const nextBtn = document.querySelector('.next-btn');
+const prevBtn = document.querySelector('.hidden-1');
+const nextBtn = document.querySelector('.hidden-2');
+const prevBtn2 = document.querySelector('.shown-1');
+const nextBtn2 = document.querySelector('.shown-2');
 const randomBtn = document.querySelector('.random-btn');
 
 let currentItem = 0;
@@ -116,6 +118,22 @@ nextBtn.addEventListener("click", function() {
 
 // SHOW PREVIOUS PERSON
 prevBtn.addEventListener("click", function() {
+  currentItem--;
+  if(currentItem < 0) {
+    currentItem = reviews.length - 1;
+  }
+  showPerson(currentItem);
+});
+
+nextBtn2.addEventListener("click", function() {
+  currentItem++;
+  if(currentItem > reviews.length - 1) {
+    currentItem = 0;
+  }
+  showPerson(currentItem);
+});
+
+prevBtn2.addEventListener("click", function() {
   currentItem--;
   if(currentItem < 0) {
     currentItem = reviews.length - 1;
