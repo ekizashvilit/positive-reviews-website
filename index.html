@@ -13,30 +13,39 @@
   <body>
     <main>
       <section class="container">
+        <button class="prev-btn hidden">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="next-btn hidden">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+
         <div class="title">
-          <h2>our reviews</h2>
+          <h2>our clients say</h2>
           <div class="underline"></div>
         </div>
         <article class="review">
           <div class="img-container">
             <img src="person-1.jpeg" alt="" id="person-img" />
           </div>
-          <h4 id="author">sara jones</h4>
-          <p id="job">ux designer</p>
+
           <p id="info">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore
             praesentium aperiam eligendi cupiditate quae quia ab quod iusto
             similique rem?
           </p>
-          <div class="button-container">
-            <button class="prev-btn">
-              <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="prev-btn">
-              <i class="fas fa-chevron-right"></i>
-            </button>
+          <h4 id="author">sara jones</h4>
+          <div class="switcher">
+            <div class="button-container">
+              <button class="prev-btn">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="next-btn">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+            <button class="random-btn">randomizer</button>
           </div>
-          <button class="random-btn">surprise me</button>
         </article>
       </section>
     </main>
