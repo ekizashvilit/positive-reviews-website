@@ -47,7 +47,7 @@ main {
 }
 
 .container {
-  margin-top: 4rem;
+  margin: 4rem 0;
   position: relative;
   max-width: 1200px;
 }
